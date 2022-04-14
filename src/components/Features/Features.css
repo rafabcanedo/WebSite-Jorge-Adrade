@@ -1,0 +1,141 @@
+.features .box {
+    padding: 50px;
+}
+
+.features .box h2 {
+    margin: 20px 0 20px 0;
+}
+
+.features .box p {
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+
+.features .box i {
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.features .box:hover p {
+    color: #878e99;
+}
+
+.features .box:hover i {
+    /*color: white;*/
+    opacity: 1;
+}
+
+/* TEST */
+.features {
+  position: relative;
+}
+.features .box {
+  border-radius: 10px;
+  position: relative;
+}
+.features .box:hover {
+  background: none;
+  transform: translateY(-0);
+}
+
+.features .img {
+  height: 300px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.features img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.features .box .img:hover img {
+  transform: scale(1.2);
+}
+
+.features span {
+  color: #010326;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/*--------- MODAL ---------*/
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.overlay {
+  background-color: #e2e8ec;
+}
+
+.modal-content {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  line-height: 1.4;
+  background: #e2e8ec;
+  padding: 14px 28px;
+  min-width: 60%;
+  max-width: 85%;
+  z-index: 9999;
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.modal-text {
+  padding: 0 100px 0 50px;
+}
+
+.modal-text h1 {
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+
+.moda-text p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.modal-text button {
+  margin-right: 20px;
+  color: black; /* change color */
+}
+.modal-text button i {
+  margin-left: 10px;
+}
+
+.modal-text button.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0 0;
+  font-size: 20px;
+}
+
+/* tidy up close icon */
+.modal-text button.close-modal i {
+  margin: 0;
+}
